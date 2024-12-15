@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-5 fixed-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Happy Horizons</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Wahana.html">Wahana</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tiket & Promo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold text-primary" href="ticket.html">Tiket</a></li>
+              <li><a class="dropdown-item fw-bold text-primary" href="promo.html">Promo</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Tentang Kami</a>
+          </li>
+        </ul>
+          <a class="d-flex btn btn-primary" href="login.html" role="button">Login</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousel -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="PIC/1-1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="PIC/1-2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item"> 
+        <img src="PIC/1-3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- beli tiket -->
+  <div class="d-flex justify-content-center align-items-center container text-center mt-5">
+      <div class="card medium-card  shadow">
+          <div class="card-body ">
+              <h5 class="card-title">Beli Tiket Sekarang</h5>
+              <p class="card-text">Klik disini untuk membeli</p>
+              <a href="ticket.html" class="btn btn-primary">Beli</a>
+          </div>
+      </div>
+  </div>
+
+<!-- tiket & hotel -->
+<div class="container my-5 ">
+  <div class="row g-3"> 
+      <!-- First Image -->
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <a href="ticket.html"><img src="PIC/Tiket1.png" alt="Image 1" class="img-fluid custom-img"></a>
+      </div>
+      <!-- Second Image -->
+      <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <a href="hotel.html"><img src="PIC/Hotel1.png" alt="Image 2" class="img-fluid custom-img "></a>
+      </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div class="container text-center shadow">
+  <div class="row">
+    <div class="col">
+
+    </div>
+    <div class="col-10">
+
+      <div class="d-flex justify-content-center align-items-center my-4">
+        <h2 class="bolded">Horizon Park</h2>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center">
+        <p>
+          Horizon Park adalah taman bermain keluarga yang menawarkan berbagai wahana seru dan atraksi interaktif. Dikelilingi oleh pemandangan alam yang indah, taman ini memiliki area petualangan, zona air, dan taman bermain anak-anak. Pengunjung dapat menikmati roller coaster mendebarkan, bioskop 4D, serta pertunjukan langsung yang memukau. Dengan suasana yang ramah dan fasilitas lengkap, Horizon Park menjadi destinasi ideal untuk liburan yang menyenangkan.</p>
+      </div>
+ 
+      <div class="d-flex justify-content-center align-items-center my-3">
+        <a class="btn btn-primary" href="#" role="button">Tentang Kami</a>
+      </div>
+
+
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+</div>
+
+<!-- Akuarium -->
+<div class="container my-5">
+  <div class="d-flex align-items-center">
+      <!-- Left Box: Image -->
+      <div class="flex-fill me-4 fixed-image">
+          <img src="PIC/2-1.jpg" alt="Sample Image" class="img-fluid rounded">
+      </div>
+
+      <!-- Right Box: Text -->
+      <div class="flex-fill fixed-text">
+          <h3>Aquarium Hiu</h3>
+          <p>
+            Akuarium hiu adalah salah satu atraksi menakjubkan yang menampilkan berbagai spesies hiu dalam lingkungan yang dirancang seperti habitat aslinya. Pengunjung dapat melihat hiu berenang melalui terowongan kaca yang memberikan pengalaman mendalam dan mendebarkan.
+          </p>
+      </div>
+  </div>
+</div>
+
+<!-- Ice Age -->
+<div class="container my-5">
+  <div class="d-flex align-items-center">
+    <div class="flex-fill fixed-text">
+      <h3>Wahana Ice Age</h3>
+      <p>
+        Kembali ke jaman es bersama Many dan kawan-kawan. Banyak cerita yang dapat didengar dan dilihat serta keseruan yang hebat telah menanti.
+      </p>
+    </div>
+      <div class="flex-fill mr-4 fixed-image">
+          <img src="PIC/2-2.jpg" alt="Sample Image" class="img-fluid rounded">
+      </div>
+  </div>
+</div>
+
+<!-- Wahana -->
+<div class="container">
+  <div class="d-flex align-items-center text-center">
+    <div class="flex-fill fixed-text">
+      <h3>Mau tau wahana yang lain??</h3>
+      <p>Klik tombol dibawah!!</p>
+      <a class="btn btn-light" href="Wahana.html" role="button">Klik!!</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Event & Promo -->
+
+<div class="container py-5">
+  <h1 class="text-center mb-5 bolded">Events & Promotions</h1>
+  <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+          <div class="card event-card">
+              <img src="PIC/3-2.png" alt="Dino Night Run" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Dino Night Run Season 2</h5>
+                  <p class="card-text">Sabtu, 14 September 2024<br>at Jatimpark 3</p>
+              </div>
+          </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+          <div class="card event-card">
+              <img src="PIC/3-1.jpg" alt="Promo Cashback" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Hemat hingga Rp100 Ribu</h5>
+                  <p class="card-text">Cashback hingga Rp40 Ribu<br>Hingga 31 Desember 2024</p>
+              </div>
+          </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+          <div class="card event-card">
+              <img src="PIC/3-3.jpg" alt="Spooktober Fest" class="card-img-top">
+              <div class="card-body">
+                  <h5 class="card-title">Spooktober Fest</h5>
+                  <p class="card-text">26 - 27 Oktober 2024<br>Area Gangster Town Museum Angkut</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container" style="background-color: rgb(179, 179, 255);"> 
+  <div class="text-center my-3 py-3">
+    <h3>Our Social Media</h3>
+    <p>
+      <a href="https://x.com" target="_blank"><img src="PIC/logo_X.png" alt="" class="img_logo_sosmed"></a>
+      <a href="https://facebook.com" target="_blank"><img src="PIC/Logo_FB.png" alt="" class="img_logo_sosmed"></a>
+      <a href="https://youtube.com" target="_blank"><img src="PIC/Logo_YT.png" alt="" class="img_logo_sosmed"></a>
+      <a href="https://instagram.com" target="_blank"><img src="PIC/Logo_IG.png" alt="" class="img_logo_sosmed"></a>
+    </p>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="Wahana.html" class="nav-link px-2 text-body-secondary">Wahana</a></li>
+      <li class="nav-item"><a href="ticket.html" class="nav-link px-2 text-body-secondary">Tiket</a></li>
+      <li class="nav-item"><a href="promo.html" class="nav-link px-2 text-body-secondary">Promo</a></li>
+      <li class="nav-item"><a href="hotel.html" class="nav-link px-2 text-body-secondary">Hotel</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 Happy Horizon, Inc</p>
+  </footer>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary px-5 fixed-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Happy Horizons</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Wahana.html">Wahana</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tiket & Promo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold text-primary" href="ticket.html">Tiket</a></li>
+              <li><a class="dropdown-item fw-bold text-primary" href="promo.html">Promo</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Tentang Kami</a>
+          </li>
+        </ul>
+        <a class="d-flex btn btn-primary" href="login.html" role="button">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container form-container px-4 py-4 shadow">
+    <h2 class="mb-4 text-center">Form Pembelian Tiket</h2>
+    <form id="formTiket">
+        <div class="mb-3">
+            <label for="nama" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="nama" placeholder="Masukkan nama lengkap" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Masukkan email" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="telepon" class="form-label">Nomor Telepon</label>
+            <input type="tel" class="form-control" id="telepon" placeholder="Masukkan nomor telepon" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="jumlahTiket" class="form-label">Jumlah Tiket</label>
+            <input type="number" class="form-control" id="jumlahTiket" min="1" placeholder="Masukkan jumlah tiket" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="kategoriTiket" class="form-label">Kategori Tiket</label>
+            <select class="form-select" id="kategoriTiket" required>
+                <option selected disabled>Pilih kategori</option>
+                <option value="vip">VIP</option>
+                <option value="reguler">Reguler</option>
+                <option value="ekonomi">Ekonomi</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="tanggal" class="form-label">Tanggal Acara</label>
+            <input type="date" class="form-control" id="tanggal" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Total Harga</label>
+            <p id="totalHarga" class="form-control-plaintext">Rp0</p>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Beli Tiket</button>
+    </form>
+</div>
+
+
+
+<script>
+  const hargaTiket = 45000;
+  const formTiket = document.getElementById('formTiket');
+  const jumlahTiketInput = document.getElementById('jumlahTiket');
+  const totalHargaDisplay = document.getElementById('totalHarga');
+
+  jumlahTiketInput.addEventListener('input', () => {
+      const jumlah = parseInt(jumlahTiketInput.value) || 0;
+      const totalHarga = jumlah * hargaTiket;
+      totalHargaDisplay.textContent = `Rp${totalHarga.toLocaleString('id-ID')}`;
+  });
+
+  formTiket.addEventListener('submit', (event) => {
+      event.preventDefault();
+      alert(`Pembelian tiket berhasil! Total harga: ${totalHargaDisplay.textContent}`);
+  });
+</script>
+
+<!-- Footer -->
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="Wahana.html" class="nav-link px-2 text-body-secondary">Wahana</a></li>
+      <li class="nav-item"><a href="ticket.html" class="nav-link px-2 text-body-secondary">Tiket</a></li>
+      <li class="nav-item"><a href="promo.html" class="nav-link px-2 text-body-secondary">Promo</a></li>
+      <li class="nav-item"><a href="hotel.html" class="nav-link px-2 text-body-secondary">Hotel</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 Happy Horizon, Inc</p>
+  </footer>
+</div>
+
+
+</body>
+</html>
